@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.4.0 (2025-08-12)
+
+
+### Bug Fixes
+
+* add poller to segment plugin for npm use case ([#157](https://github.com/Anatomy-Financial/experiment-js-client/issues/157)) ([1ec2fc3](https://github.com/Anatomy-Financial/experiment-js-client/commit/1ec2fc332b44790dfd01d1d4a3e43cd0be0a738f))
+* segment plugin abstract nested instance ([#158](https://github.com/Anatomy-Financial/experiment-js-client/issues/158)) ([1e73757](https://github.com/Anatomy-Financial/experiment-js-client/commit/1e73757bae98dfd8af1761c5e7c77ee7d1989fe0))
+* segment plugin use local initialized variable ([#156](https://github.com/Anatomy-Financial/experiment-js-client/issues/156)) ([7de1608](https://github.com/Anatomy-Financial/experiment-js-client/commit/7de16086a8ad9fb1b5a44c2179d3b794021bf199))
+
+
+### Features
+
+* add integration plugin; segment plugin; web exp updates ([#126](https://github.com/Anatomy-Financial/experiment-js-client/issues/126)) ([58446e2](https://github.com/Anatomy-Financial/experiment-js-client/commit/58446e2f8af0e41a8dcd9c759d53b60f041c70c2))
+* Web Experiment - refactor script for package ([#195](https://github.com/Anatomy-Financial/experiment-js-client/issues/195)) ([c3fbf68](https://github.com/Anatomy-Financial/experiment-js-client/commit/c3fbf68425d8710099a561d3ccdadb846089ab1f))
+
+
+
+
+
 ## [0.3.1](https://github.com/amplitude/experiment-js-client/compare/@amplitude/experiment-plugin-segment@0.3.0...@amplitude/experiment-plugin-segment@0.3.1) (2025-07-28)
 
 **Note:** Version bump only for package @amplitude/experiment-plugin-segment

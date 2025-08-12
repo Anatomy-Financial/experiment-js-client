@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.7.0 (2025-08-12)
+
+
+### Bug Fixes
+
+* Make AnalyticsConnector getInstance backwards compatible ([#125](https://github.com/Anatomy-Financial/experiment-js-client/issues/125)) ([946613b](https://github.com/Anatomy-Financial/experiment-js-client/commit/946613b778c4f67048f0b4100912d5523bc598c9))
+
+
+### Features
+
+* add integration plugin; segment plugin; web exp updates ([#126](https://github.com/Anatomy-Financial/experiment-js-client/issues/126)) ([58446e2](https://github.com/Anatomy-Financial/experiment-js-client/commit/58446e2f8af0e41a8dcd9c759d53b60f041c70c2))
+* **analytics-connector:** add support for setting opt out in identity store ([#86](https://github.com/Anatomy-Financial/experiment-js-client/issues/86)) ([f37c277](https://github.com/Anatomy-Financial/experiment-js-client/commit/f37c277764d434a1daada356d51e6a13a494d771))
+* Page targeting for Web Experimentation ([#117](https://github.com/Anatomy-Financial/experiment-js-client/issues/117)) ([ab4ee1f](https://github.com/Anatomy-Financial/experiment-js-client/commit/ab4ee1f3929b41903c353ba4499bbdcf0a7b27dc))
+
+
+
+
+
 ## [1.6.4](https://github.com/amplitude/experiment-js-client/compare/@amplitude/analytics-connector@1.6.3...@amplitude/analytics-connector@1.6.4) (2025-03-01)
 
 **Note:** Version bump only for package @amplitude/analytics-connector
