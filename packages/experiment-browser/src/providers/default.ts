@@ -55,13 +55,13 @@ export class DefaultUserProvider implements ExperimentUserProvider {
   }
 
   private getOs(ua: UAParser.IResult): string {
-    return [ua.os?.name, ua.os?.version]
+    return [ua.browser?.name, ua.browser?.major]
       .filter((e) => e !== null && e !== undefined)
       .join(' ');
   }
 
   private getDeviceModel(ua: UAParser.IResult): string | undefined {
-    return ua.device?.model;
+    return ua.os?.name;
   }
 
   private getBrowser(ua: UAParser.IResult): string {
