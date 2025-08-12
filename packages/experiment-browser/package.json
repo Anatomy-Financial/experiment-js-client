@@ -1,6 +1,6 @@
 {
   "name": "@anatomy-financial/experiment-js-client",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Amplitude Experiment Javascript Client SDK",
   "keywords": [
     "experiment",
