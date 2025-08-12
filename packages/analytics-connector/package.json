@@ -28,8 +28,7 @@
     "url": "https://github.com/Anatomy-Financial/experiment-js-client/issues"
   },
   "devDependencies": {
-    "@types/amplitude-js": "^8.0.2",
-    "amplitude-js": "^8.12.0"
+    "@types/amplitude-js": "^8.0.2"
   },
   "files": [
     "dist"
