@@ -4,10 +4,10 @@
   ],
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true,
+
   "command": {
     "version": {
-      "allowBranch": "main",
+      "allowBranch": "AN-7660",
       "conventionalCommits": true,
       "createRelease": "github",
       "message": "chore(release): publish",
