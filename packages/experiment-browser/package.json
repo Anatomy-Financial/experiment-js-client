@@ -34,8 +34,8 @@
     "url": "https://github.com/Anatomy-Financial/experiment-js-client/issues"
   },
   "dependencies": {
-    "@amplitude/analytics-connector": "^1.7.1",
-    "@amplitude/experiment-core": "^0.12.1",
+    "@amplitude/analytics-connector": "^1.6.4",
+    "@amplitude/experiment-core": "^0.11.0",
     "base64-js": "1.5.1",
     "ua-parser-js": "^2.0.4",
     "unfetch": "4.1.0"
