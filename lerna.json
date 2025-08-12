@@ -4,13 +4,9 @@
   ],
   "version": "independent",
   "npmClient": "yarn",
-
   "command": {
-    "version": {
-      "allowBranch": "AN-7660",
-      "conventionalCommits": true,
-      "message": "chore(release): publish",
-      "preid": "beta"
+    "publish": {
+      "registry": "https://npm.pkg.github.com"
     }
   }
 }
