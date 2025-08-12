@@ -1,6 +1,6 @@
 import { EvaluationCondition } from '@amplitude/experiment-core';
-import { ExperimentConfig } from '@amplitude/experiment-js-client';
-import { ExperimentClient, Variants } from '@amplitude/experiment-js-client';
+import { ExperimentConfig } from '@anatomy-financial/experiment-js-client';
+import { ExperimentClient, Variants } from '@anatomy-financial/experiment-js-client';
 
 import { MessageType } from './message-bus';
 

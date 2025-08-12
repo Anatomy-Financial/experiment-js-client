@@ -1,5 +1,5 @@
 import { EvaluationVariant, getGlobalScope } from '@amplitude/experiment-core';
-import { Variant } from '@amplitude/experiment-js-client';
+import { Variant } from '@anatomy-financial/experiment-js-client';
 
 export const getUrlParams = (): Record<string, string> => {
   const globalScope = getGlobalScope();

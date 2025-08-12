@@ -2,7 +2,7 @@ import type {
   ExperimentEvent,
   ExperimentUser,
   IntegrationPlugin,
-} from '@amplitude/experiment-js-client';
+} from '@anatomy-financial/experiment-js-client';
 
 import { safeGlobal } from './global';
 import { snippetInstance } from './snippet';

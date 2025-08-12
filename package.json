@@ -44,5 +44,8 @@
   },
   "resolutions": {
     "@testing-library/dom": "7.26.0"
+  },
+  "dependencies": {
+    "@amplitude/experiment-core": "^0.11.0"
   }
 }

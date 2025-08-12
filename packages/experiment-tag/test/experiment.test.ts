@@ -1,6 +1,6 @@
 import * as experimentCore from '@amplitude/experiment-core';
 import { safeGlobal } from '@amplitude/experiment-core';
-import { ExperimentClient } from '@amplitude/experiment-js-client';
+import { ExperimentClient } from '@anatomy-financial/experiment-js-client';
 import { Base64 } from 'js-base64';
 import { DefaultWebExperimentClient } from 'src/experiment';
 import * as uuid from 'src/util/uuid';

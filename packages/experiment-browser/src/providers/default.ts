@@ -1,5 +1,5 @@
 import { getGlobalScope } from '@amplitude/experiment-core';
-import { UAParser } from '@amplitude/ua-parser-js';
+import * as UAParser from 'ua-parser-js';
 
 import { LocalStorage } from '../storage/local-storage';
 import { SessionStorage } from '../storage/session-storage';
@@ -8,11 +8,11 @@ import { ExperimentUser } from '../types/user';
 
 export class DefaultUserProvider implements ExperimentUserProvider {
   globalScope = getGlobalScope();
-  private readonly userAgent: string =
+  private readonly userAgent: string | undefined =
     typeof this.globalScope?.navigator !== 'undefined'
       ? this.globalScope?.navigator.userAgent
       : undefined;
-  private readonly ua = new UAParser(this.userAgent).getResult();
+  private readonly ua = UAParser.UAParser(this.userAgent);
   private readonly localStorage = new LocalStorage();
   private readonly sessionStorage = new SessionStorage();
   private readonly storageKey: string;
@@ -33,8 +33,8 @@ export class DefaultUserProvider implements ExperimentUserProvider {
       platform: 'Web',
       os: this.getOs(this.ua),
       device_model: this.getDeviceModel(this.ua),
-      device_category: this.ua.device?.type ?? 'desktop',
-      referring_url: this.globalScope?.document?.referrer.replace(/\/$/, ''),
+      device_category: this.getDeviceCategory(this.ua),
+      referring_url: this.globalScope?.document?.referrer?.replace(/\/$/, ''),
       cookie: this.getCookie(),
       browser: this.getBrowser(this.ua),
       landing_url: this.getLandingUrl(),
@@ -54,18 +54,18 @@ export class DefaultUserProvider implements ExperimentUserProvider {
     );
   }
 
-  private getOs(ua: UAParser): string {
-    return [ua.browser?.name, ua.browser?.major]
+  private getOs(ua: UAParser.IResult): string {
+    return [ua.os?.name, ua.os?.version]
       .filter((e) => e !== null && e !== undefined)
       .join(' ');
   }
 
-  private getDeviceModel(ua: UAParser): string | undefined {
-    return ua.os?.name;
+  private getDeviceModel(ua: UAParser.IResult): string | undefined {
+    return ua.device?.model;
   }
 
-  private getBrowser(ua: UAParser): string {
-    let browser = ua.browser?.name;
+  private getBrowser(ua: UAParser.IResult): string {
+    let browser = ua.browser?.name ?? '';
     // Normalize for Chrome, Firefox, Safari, Edge, and Opera.
     if (browser?.includes('Chrom')) browser = 'Chrome'; // Chrome, Chrome Mobile, Chromium, etc
     if (browser?.includes('Firefox')) browser = 'Firefox'; // Firefox, Firefox Mobile, etc
@@ -75,7 +75,25 @@ export class DefaultUserProvider implements ExperimentUserProvider {
     return browser;
   }
 
-  private getCookie(): Record<string, string> {
+  private getDeviceCategory(
+    ua: UAParser.IResult,
+  ): 'mobile' | 'tablet' | 'console' | 'smarttv' | 'wearable' | 'embedded' | 'desktop' {
+    switch (ua.device?.type) {
+      case 'mobile':
+      case 'tablet':
+      case 'console':
+      case 'smarttv':
+      case 'wearable':
+      case 'embedded':
+        return ua.device.type;
+      case 'xr':
+        return 'wearable';
+      default:
+        return 'desktop';
+    }
+  }
+
+  private getCookie(): Record<string, string> | undefined {
     if (!this.globalScope?.document?.cookie) {
       return undefined;
     }
@@ -117,7 +135,7 @@ export class DefaultUserProvider implements ExperimentUserProvider {
     }
   }
 
-  private getUrlParam(): Record<string, string | string[]> {
+  private getUrlParam(): Record<string, string | string[]> | undefined {
     if (!this.globalScope) {
       return undefined;
     }
