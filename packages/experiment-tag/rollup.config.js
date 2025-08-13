@@ -1,6 +1,6 @@
 import { join, resolve as pathResolve } from 'path';
 
-import tsConfig from '@amplitude/experiment-js-client/tsconfig.json';
+import tsConfig from '@anatomy-financial/experiment-js-client/tsconfig.json';
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';

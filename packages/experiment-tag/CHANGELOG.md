@@ -3,6 +3,61 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://github.com/Anatomy-Financial/experiment-js-client/compare/@amplitude/experiment-tag@0.10.0...@amplitude/experiment-tag@0.10.1) (2025-08-12)
+
+**Note:** Version bump only for package @amplitude/experiment-tag
+
+
+
+
+
+# 0.10.0 (2025-08-12)
+
+
+### Bug Fixes
+
+* add inject support to experiment-tag ([#118](https://github.com/Anatomy-Financial/experiment-js-client/issues/118)) ([23b8757](https://github.com/Anatomy-Financial/experiment-js-client/commit/23b8757b70c1e261c9bf607ac3adef3288cf6039))
+* add MessageEvent origin check for visual editor initialization ([#133](https://github.com/Anatomy-Financial/experiment-js-client/issues/133)) ([05c2c38](https://github.com/Anatomy-Financial/experiment-js-client/commit/05c2c3898cd7dcac4b60ae4794dd73c7e7004be3))
+* add nonce ([#183](https://github.com/Anatomy-Financial/experiment-js-client/issues/183)) ([53cd69e](https://github.com/Anatomy-Financial/experiment-js-client/commit/53cd69e5101458aadecc75048f8dbafdcd5ba20f))
+* Add patch dom mutator ([#146](https://github.com/Anatomy-Financial/experiment-js-client/issues/146)) ([a1afcfa](https://github.com/Anatomy-Financial/experiment-js-client/commit/a1afcfa2161ba75d8756800e153b180adce36d8a))
+* always track control impression when on active page ([#191](https://github.com/Anatomy-Financial/experiment-js-client/issues/191)) ([f22267c](https://github.com/Anatomy-Financial/experiment-js-client/commit/f22267cde1c04cd50b19a24f2224750045c87c5f))
+* always track impression if there is active variant action on page, revert stale variant actions ([#189](https://github.com/Anatomy-Financial/experiment-js-client/issues/189)) ([0e91294](https://github.com/Anatomy-Financial/experiment-js-client/commit/0e91294328909f693dc61ded479414ba0a25fcd1))
+* change integration timeout to 100ms ([#164](https://github.com/Anatomy-Financial/experiment-js-client/issues/164)) ([25e6367](https://github.com/Anatomy-Financial/experiment-js-client/commit/25e63675342b3db46d1eba6a7a1509aef3009d33))
+* check current url equal to redirection url before tracking redirect impression ([#194](https://github.com/Anatomy-Financial/experiment-js-client/issues/194)) ([b76957e](https://github.com/Anatomy-Financial/experiment-js-client/commit/b76957e06c00c9c271ecd174f66ca8a4d2fe7a4b))
+* dedupe control/off exposures ([#142](https://github.com/Anatomy-Financial/experiment-js-client/issues/142)) ([6495b0c](https://github.com/Anatomy-Financial/experiment-js-client/commit/6495b0c6a0c900a93b07995371646078703b393f))
+* Dedupe web experiment exposures if URL is unchanged ([cccbc72](https://github.com/Anatomy-Financial/experiment-js-client/commit/cccbc72421343a349b19fb2cb0cf6b9fd4f0919d))
+* dont re-add plugin; remove integration timout error log ([#173](https://github.com/Anatomy-Financial/experiment-js-client/issues/173)) ([9490d83](https://github.com/Anatomy-Financial/experiment-js-client/commit/9490d83bd66735aab515957d2e666f58fcf5dbad))
+* remove dommutator patch; add license info to script ([#170](https://github.com/Anatomy-Financial/experiment-js-client/issues/170)) ([442c309](https://github.com/Anatomy-Financial/experiment-js-client/commit/442c309d4124b9f7674df1aec67f5b1558a27e0f))
+* scoping for control impression event actions ([#190](https://github.com/Anatomy-Financial/experiment-js-client/issues/190)) ([9024e90](https://github.com/Anatomy-Financial/experiment-js-client/commit/9024e905c20f20c1aa669eefb091c13d455e5870))
+* set isRunning after Visual Editor initializes ([#192](https://github.com/Anatomy-Financial/experiment-js-client/issues/192)) ([54bdf79](https://github.com/Anatomy-Financial/experiment-js-client/commit/54bdf79d89d06189add106a3e4e36bd214bd5932))
+* store remote flags in session storage for reuse within session ([#162](https://github.com/Anatomy-Financial/experiment-js-client/issues/162)) ([ef19343](https://github.com/Anatomy-Financial/experiment-js-client/commit/ef19343f89303889dc616176d545f5fb9a525e59))
+* track control impressions on targeted pages ([#181](https://github.com/Anatomy-Financial/experiment-js-client/issues/181)) ([0910310](https://github.com/Anatomy-Financial/experiment-js-client/commit/0910310f3d74a72e471a443982e7184e54301fa2))
+* update experiment tag packaging; export types ([#174](https://github.com/Anatomy-Financial/experiment-js-client/issues/174)) ([1850ec7](https://github.com/Anatomy-Financial/experiment-js-client/commit/1850ec74a7eeb362535c036d36eac243630110a0))
+* url-redirect impression events fired on redirected page ([#193](https://github.com/Anatomy-Financial/experiment-js-client/issues/193)) ([a80ac61](https://github.com/Anatomy-Financial/experiment-js-client/commit/a80ac612290c065f0a4ab877c2f02c2ba0c227c6))
+* use main branch patch of dm ([#171](https://github.com/Anatomy-Financial/experiment-js-client/issues/171)) ([8326540](https://github.com/Anatomy-Financial/experiment-js-client/commit/8326540c8b7bc626982c5fcdd8acea42ccddb497))
+* Web Experiment - Control variant condition ([#188](https://github.com/Anatomy-Financial/experiment-js-client/issues/188)) ([3b32839](https://github.com/Anatomy-Financial/experiment-js-client/commit/3b3283943448da3e58c03fa4ebc32aa77ad38b47))
+* Web Experiment - only apply antiflicker for active experiments on page ([#155](https://github.com/Anatomy-Financial/experiment-js-client/issues/155)) ([5d6f5d1](https://github.com/Anatomy-Financial/experiment-js-client/commit/5d6f5d16f2e88ac60166f80053ecc34b13285081))
+* Web experiment variant action deduplication ([#166](https://github.com/Anatomy-Financial/experiment-js-client/issues/166)) ([df23202](https://github.com/Anatomy-Financial/experiment-js-client/commit/df232027aa0db64cddb3067bc543243cfcf036ec))
+
+
+### Features
+
+* add feature experiment support in web script ([#140](https://github.com/Anatomy-Financial/experiment-js-client/issues/140)) ([bf60c05](https://github.com/Anatomy-Financial/experiment-js-client/commit/bf60c05107388ece6f5469b182c2b521fe7957ef))
+* add integration plugin; segment plugin; web exp updates ([#126](https://github.com/Anatomy-Financial/experiment-js-client/issues/126)) ([58446e2](https://github.com/Anatomy-Financial/experiment-js-client/commit/58446e2f8af0e41a8dcd9c759d53b60f041c70c2))
+* add throwOnError configuration option ([#187](https://github.com/Anatomy-Financial/experiment-js-client/issues/187)) ([00761aa](https://github.com/Anatomy-Financial/experiment-js-client/commit/00761aa122c4f5da30af914a82543635bfd25208))
+* add url param targeting ([#124](https://github.com/Anatomy-Financial/experiment-js-client/issues/124)) ([aaad4fa](https://github.com/Anatomy-Financial/experiment-js-client/commit/aaad4fa70788d8eabcfb34745957f57d01fe2a8e))
+* migrate to use web_exp_id for web experiment device_id bucketing ([#154](https://github.com/Anatomy-Financial/experiment-js-client/issues/154)) ([6c7c3ba](https://github.com/Anatomy-Financial/experiment-js-client/commit/6c7c3bacebe3f8c6077f5d2532d5a06259e374bf))
+* Page targeting for Web Experimentation ([#117](https://github.com/Anatomy-Financial/experiment-js-client/issues/117)) ([ab4ee1f](https://github.com/Anatomy-Financial/experiment-js-client/commit/ab4ee1f3929b41903c353ba4499bbdcf0a7b27dc))
+* Support visual editor mode for multi-page apps ([#198](https://github.com/Anatomy-Financial/experiment-js-client/issues/198)) ([fb4310b](https://github.com/Anatomy-Financial/experiment-js-client/commit/fb4310bd862fd9aadc917b84d390cb4bba9a39ca))
+* Support web experiment page view objects ([#165](https://github.com/Anatomy-Financial/experiment-js-client/issues/165)) ([2da40e2](https://github.com/Anatomy-Financial/experiment-js-client/commit/2da40e2ab7395abc92e6644c8ac99a27ba3f007b))
+* Web Experiment - refactor script for package ([#195](https://github.com/Anatomy-Financial/experiment-js-client/issues/195)) ([c3fbf68](https://github.com/Anatomy-Financial/experiment-js-client/commit/c3fbf68425d8710099a561d3ccdadb846089ab1f))
+* Web experiment remote evaluation ([#138](https://github.com/Anatomy-Financial/experiment-js-client/issues/138)) ([d7c167f](https://github.com/Anatomy-Financial/experiment-js-client/commit/d7c167f2df625bd15b6a2af2c2cb01a5e1ccc108))
+* WebExperiment class ([#152](https://github.com/Anatomy-Financial/experiment-js-client/issues/152)) ([468fa3a](https://github.com/Anatomy-Financial/experiment-js-client/commit/468fa3aed52739e049fdb67bc159de7a8aa94e0f))
+
+
+
+
+
 # [0.9.0](https://github.com/amplitude/experiment-js-client/compare/@amplitude/experiment-tag@0.8.2...@amplitude/experiment-tag@0.9.0) (2025-08-11)
 
 

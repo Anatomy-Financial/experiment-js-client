@@ -1,9 +1,9 @@
 {
   "name": "@amplitude/analytics-connector",
-  "version": "1.6.4",
+  "version": "1.7.1",
   "description": "Connector package for Amplitude SDKs",
   "author": "Amplitude",
-  "homepage": "https://github.com/amplitude/experiment-js-client",
+  "homepage": "https://github.com/Anatomy-Financial/experiment-js-client",
   "license": "MIT",
   "main": "dist/analytics-connector.umd.js",
   "module": "dist/analytics-connector.esm.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amplitude/experiment-js-client.git",
+    "url": "https://github.com/Anatomy-Financial/experiment-js-client.git",
     "directory": "packages/analytics-connector"
   },
   "scripts": {
@@ -25,13 +25,13 @@
     "prepublish": "yarn build"
   },
   "bugs": {
-    "url": "https://github.com/amplitude/experiment-js-client/issues"
+    "url": "https://github.com/Anatomy-Financial/experiment-js-client/issues"
   },
   "devDependencies": {
-    "@types/amplitude-js": "^8.0.2",
-    "amplitude-js": "^8.12.0"
+    "@types/amplitude-js": "^8.0.2"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "gitHead": "da49e4c7741e4dca24ce758756233b97bfaa936e"
 }

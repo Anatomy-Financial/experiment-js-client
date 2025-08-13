@@ -4,14 +4,9 @@
   ],
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true,
   "command": {
-    "version": {
-      "allowBranch": "main",
-      "conventionalCommits": true,
-      "createRelease": "github",
-      "message": "chore(release): publish",
-      "preid": "beta"
+    "publish": {
+      "registry": "https://npm.pkg.github.com"
     }
   }
 }

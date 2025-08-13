@@ -3,6 +3,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "repository": "https://github.com/Anatomy-Financial/experiment-js-client",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "lerna run build --stream",
     "clean": "lerna run clean --stream && rimraf node_modules",
@@ -44,5 +48,8 @@
   },
   "resolutions": {
     "@testing-library/dom": "7.26.0"
+  },
+  "dependencies": {
+    "@amplitude/experiment-core": "^0.11.0"
   }
 }

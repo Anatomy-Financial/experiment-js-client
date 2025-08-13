@@ -11,8 +11,8 @@ import {
   AmplitudeIntegrationPlugin,
   ExperimentClient,
   Variants,
-} from '@amplitude/experiment-js-client';
-import * as FeatureExperiment from '@amplitude/experiment-js-client';
+} from '@anatomy-financial/experiment-js-client';
+import * as FeatureExperiment from '@anatomy-financial/experiment-js-client';
 import mutate, { MutationController } from 'dom-mutator';
 
 import { MessageBus } from './message-bus';

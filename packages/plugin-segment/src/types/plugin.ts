@@ -1,4 +1,4 @@
-import { IntegrationPlugin } from '@amplitude/experiment-js-client';
+import { IntegrationPlugin } from '@anatomy-financial/experiment-js-client';
 import { Analytics } from '@segment/analytics-next';
 
 export interface Options {

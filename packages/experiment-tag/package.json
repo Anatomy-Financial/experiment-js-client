@@ -1,9 +1,9 @@
 {
   "name": "@amplitude/experiment-tag",
-  "version": "0.9.0",
+  "version": "0.10.1",
   "description": "Amplitude Experiment Javascript Snippet",
   "author": "Amplitude",
-  "homepage": "https://github.com/amplitude/experiment-js-client",
+  "homepage": "https://github.com/Anatomy-Financial/experiment-js-client",
   "license": "MIT",
   "main": "dist/experiment-tag.umd.js",
   "types": "dist/types/src/index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amplitude/experiment-js-client.git",
+    "url": "https://github.com/Anatomy-Financial/experiment-js-client.git",
     "directory": "packages/experiment-tag"
   },
   "scripts": {
@@ -24,12 +24,12 @@
     "prepublish": "yarn build"
   },
   "bugs": {
-    "url": "https://github.com/amplitude/experiment-js-client/issues"
+    "url": "https://github.com/Anatomy-Financial/experiment-js-client/issues"
   },
   "dependencies": {
-    "@amplitude/experiment-core": "^0.11.0",
-    "@amplitude/experiment-js-client": "^1.16.2",
-    "dom-mutator": "git+ssh://git@github.com:amplitude/dom-mutator#ef95c531a822bce55c197a6bf5e1d86d03bc086c",
+    "@amplitude/experiment-core": "^0.12.1",
+    "@anatomy-financial/experiment-js-client": "^1.16.2",
+    "dom-mutator": "^0.7.0",
     "rollup-plugin-license": "^3.6.0"
   },
   "devDependencies": {
@@ -39,5 +39,6 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "gitHead": "da49e4c7741e4dca24ce758756233b97bfaa936e"
 }

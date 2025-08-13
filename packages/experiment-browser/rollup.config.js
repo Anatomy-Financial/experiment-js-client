@@ -72,7 +72,7 @@ const configs = [
       format: 'esm',
     }),
     external: [
-      '@amplitude/ua-parser-js',
+      'ua-parser-js',
       '@amplitude/analytics-connector',
       '@amplitude/experiment-core',
     ],
@@ -86,7 +86,7 @@ const configs = [
       format: 'esm',
     }),
     external: [
-      '@amplitude/ua-parser-js',
+      'ua-parser-js',
       '@amplitude/analytics-connector',
       '@amplitude/experiment-core',
     ],
